@@ -54,15 +54,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://stock-wise.vercel.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -139,19 +131,6 @@ to use this project:
 
 it will run the the server on ```localhost:3000```
 
-<!-- ### Test
-
-to run test in these this project:
-
-```ruby
-   rspec
-```
-
-it will run the all the unit test of these project
-
- -->
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -180,7 +159,7 @@ it will run the all the unit test of these project
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/HtetWaiYan7191/issues).
+Feel free to check the [issues page](https://github.com/HtetWaiYan7191/blog-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
