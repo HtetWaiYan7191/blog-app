@@ -5,7 +5,6 @@ class Post < ApplicationRecord
 
   after_save :update_posts_counter
 
-
   def recent_comments(limit = 5)
     comments.last(limit)
   end
