@@ -1,1 +1,30 @@
-<h1>Here is a user according to id</h1>
+ <section class="user-section">
+    <div class="user-container">
+        <div class="user-img">
+            <img src="<%= @user.photo %>" width="100%"  height = "100%">
+        </div>
+        <div class="user-info">
+            <h2><%= @user.name %></h2>
+            <h2>Number of posts: <%= @user.post_counter %></h2>
+        </div>
+     </div>
+
+     <div class="bio-container">
+        <p><%=  @user.bio%></p>
+     </div>
+ </section>
+ <section class="post-section">
+    <div class="post-container">
+        <% @user.recent_posts.each do |post|%>
+            <div class="post-card" style="border: 1px solid black; margin:10px; padding:10px ">
+                <h2><%= post.title %></h2>
+                <p><%= post.text %></p>
+                <div class="reactions">
+                    <button>Comments <%== post.comment_counter%> </button>
+                    <button>Likes <%== post.like_counter%> </button>
+                </div>
+            </div>
+        <% end%>
+    </div>
+    <%= link_to "See all posts", user_posts_path(user_id: @user.id), class: "btn btn-success" %>
+ </section>
