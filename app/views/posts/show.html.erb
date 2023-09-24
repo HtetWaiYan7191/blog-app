@@ -1,1 +1,19 @@
-<h1>Here is a list of posts give by a user and post id</h1>
+<div class="post-container">
+    <div class="post-header" style="display:flex; align-items:center;">
+            <h2><%= @post.title%> By <%= @post.author.name%></h2>
+            <ul style="display:flex;">
+                <li>Comments: <%= @post.comment_counter%> </li>
+                <li>Likes: <%@post.like_counter%> </li>
+            </ul>
+    </div>
+
+    <div class="post-body">
+        <%=@post.text%>
+    </div>
+
+    <div class="comment-container">
+        <% @post.recent_comments.each do |comment| %>
+            <%= comment.user.name%> : <%= comment.text%>
+        <% end %>
+    </div>
+</div>
