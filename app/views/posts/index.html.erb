@@ -25,7 +25,7 @@
             <h4 class="comment-title">Comments</h4>
             <div class="comment-container">
                 <% post.recent_comments.each do |comment|%>
-                    <%= comment.user.name%> : <%= comment.text%>
+                    <%= comment.author.name%> : <%= comment.text%>
                 <% end %>
             </div>
         </div>

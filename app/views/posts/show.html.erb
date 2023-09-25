@@ -13,8 +13,8 @@
     </div>
 
     <div class="comment-container">
-        <% @post.recent_comments.each do |comment| %>
-            <%= comment.user.name%> : <%= comment.text%>
+        <% @post.comments.each do |comment| %>
+            <span><%= comment.author.name%> : <%= comment.text%></span>
         <% end %>
     </div>
 </div>
