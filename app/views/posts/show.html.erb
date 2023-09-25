@@ -1,12 +1,13 @@
 <div class="post-container">
-    <div class="post-header" style="display:flex; align-items:center;">
+    <div class="post-header">
             <h2><%= @post.title%> By <%= @post.author.name%></h2>
-            <ul style="display:flex;">
+            <ul>
                 <li>Comments: <%= @post.comment_counter%> </li>
                 <li>Likes: <%@post.like_counter%> </li>
             </ul>
     </div>
 
+    <h4 class="comment-title">Comments</h4>
     <div class="post-body">
         <%=@post.text%>
     </div>
