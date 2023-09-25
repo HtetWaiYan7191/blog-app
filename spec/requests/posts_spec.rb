@@ -3,7 +3,6 @@ require 'rails_helper'
 RSpec.describe 'Posts', type: :request do
   describe 'GET /index' do
     before(:each) do
-      # let!(:user) {User.create(name: 'htet', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'software developer')}
       get '/users/1/posts'
     end
 
