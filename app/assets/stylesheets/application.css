@@ -53,13 +53,13 @@
 .post-container {
   width: 80%;
   padding: 0;
-  margin: 1.2rem auto;
+  margin: 1.2rem auto 0 auto;
 }
 
 .post-card {
   border: 1px solid black;
   padding: 10px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
 }
 
 .post-card h2 {
@@ -125,6 +125,19 @@
 }
 
 .post-card-container {
-  margin: 2rem 0 4rem 0;
-  border-bottom: 1px solid black;
+  margin: 2rem 0 0,5rem 0;
+}
+
+.new-post-btn {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.like-comment-container {
+  display: flex;
 }
