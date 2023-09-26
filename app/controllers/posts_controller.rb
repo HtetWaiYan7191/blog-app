@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @count = @post.comment_counter
   end
 
   def new
@@ -17,7 +18,7 @@ class PostsController < ApplicationController
     @post.author = current_user
 
     if @post.save
-      redirect_to user_path(id: @post.author_id)
+      redirect_to user_posts_path(id: current_user.id)
     else
       render :new, alert: 'Cannot create a new post'
     end
