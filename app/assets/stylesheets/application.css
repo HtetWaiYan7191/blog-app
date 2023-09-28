@@ -23,7 +23,7 @@
 .user-info {
   margin: 0 10px 0 10px;
   border: 1px solid black;
-  flex: 1;
+  
 }
 
 .user-info h2 {
@@ -40,11 +40,6 @@
   width: 80%;
   margin: 10px auto;
   border: 1px solid black;
-  padding: 10px;
-}
-
-.bio-container h2 {
-  margin-bottom: 20px;
 }
 
 .bio-container p {
@@ -63,7 +58,6 @@
 
 .post-card {
   border: 1px solid black;
-  padding: 10px;
   margin-bottom: 0.4rem;
 }
 
@@ -72,7 +66,6 @@
 }
 
 .post-card p {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -81,7 +74,6 @@
 }
 
 .reactions span {
-  padding: 6px;
   margin-right: 10px;
 }
 
