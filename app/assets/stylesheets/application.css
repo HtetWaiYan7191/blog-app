@@ -91,9 +91,12 @@
 .comment-container {
   border: 1px solid black;
   margin: 10px 0 10px 0;
-  padding: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.comment-container span:nth-child(even) {
+  background-color: rgb(221, 219, 219);
 }
 
 .post-header {
@@ -121,9 +124,6 @@
   margin-bottom: 0.7rem;
 }
 
-.post-card-container {
-  margin: 2rem 0 0.5rem 0;
-}
 
 .new-post-btn {
   border: 1px solid black;
