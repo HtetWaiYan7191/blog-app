@@ -29,7 +29,7 @@
             <h4 class="comment-title font-semibold">Comments</h4>
             <div class="comment-container w-[60%] rounded-md">
                 <% post.recent_comments.each do |comment|%>
-                    <span class="px-2 py-1"><%= comment.author.name%> : <%= comment.text%></span>
+                    <span class="px-2 py-1"><span class="font-semibold"><%= comment.author.name%></span> : <%= comment.text%></span>
                 <% end %>
             </div>
         </div>
