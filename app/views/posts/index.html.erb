@@ -1,35 +1,35 @@
-<h1 class="post-title"><%= @user.name%>'s Posts</h1>
-    <div class="user-card-container">
+<h1 class="user-title font-bold text-4xl my-10"><%= @user.name%>'s Posts</h1>
+    <div class="user-card-container  w-[65%] mx-auto">
          <div class="user-card" >
         <div class="user-img">
-            <img src=<%= @user.photo %> width="100px"  height = "100px" class="user-photo">
+            <img src=<%= @user.photo%> class="user-photo rounded-full w-[120px] h-[120px]">
         </div>
-        <div class="user-info">
-            <h2><%= @user.name %></h2>
-            <h2 class="post-counter">Number of posts: <%= @user.post_counter %></h2>
+        <div class="user-info bg-gray-200 border-2  rounded-md w-[500px] hover:bg-gray-400">
+            <h2 class="font-bold text-2xl"><%= @user.name %></h2>
+            <h2 class="post-counter font-semibold text-sm text-gray-400">Number of posts: <%= @user.post_counter %></h2>
         </div>
     </div>
-             <%= link_to "Add a new post", new_user_post_path(user_id: @user.id), class: "new-post-btn post-btn"%>
+             <%= link_to "Add a new post", new_user_post_path(user_id: @user.id), class: "bg-black text-white/80 border-2 px-3 py-1 rounded-md new-post-btn hover:text-white hover:font-semibold w-[150px] ms-[10%]"%>
     </div>
   
            
 
-<div class="post-container">
+<div class="post-container my-10 w-[50%] mx-auto">
     <% @posts.each do |post|%>
     <%= link_to user_post_path(user_id: post.author_id, id: post.id) do%>
-        <div class="post-card-container">
-             <div class="post-card">
-                <h2><%= post.title %></h2>
-                <p><%= post.text %></p>
-                <div class="reactions">
-                    <span>Comments <%== post.comment_counter%> </span>
-                    <span>Likes <%== post.like_counter%> </span>
+        <div class="post-card-container my-20">
+             <div class="post-card bg-gray-200 border-2 my-5  rounded-md w-[700px]  hover:bg-gray-400">
+                <h2 class="font-semibold text-lg bg-black/80 text-white px-3 py-1"><%= post.title %></h2>
+                <p class="line-clamp-2 px-2 py-1 text-sm"><%= post.text %></p>
+                <div class="reactions p-4">
+                    <span class="font-semibold text-sm">Comments <%== post.comment_counter%> </span>
+                    <span class="font-semibold text-sm">Likes <%== post.like_counter%> </span>
                 </div>
             </div>
-            <h4 class="comment-title">Comments</h4>
-            <div class="comment-container">
+            <h4 class="comment-title font-semibold">Comments</h4>
+            <div class="comment-container w-[60%] rounded-md">
                 <% post.recent_comments.each do |comment|%>
-                    <span><%= comment.author.name%> : <%= comment.text%></span>
+                    <span class="px-2 py-1"><span class="font-semibold"><%= comment.author.name%></span> : <%= comment.text%></span>
                 <% end %>
             </div>
         </div>

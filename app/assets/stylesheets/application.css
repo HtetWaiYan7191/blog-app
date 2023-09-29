@@ -23,7 +23,6 @@
 .user-info {
   margin: 0 10px 0 10px;
   border: 1px solid black;
-  flex: 1;
 }
 
 .user-info h2 {
@@ -40,11 +39,6 @@
   width: 80%;
   margin: 10px auto;
   border: 1px solid black;
-  padding: 10px;
-}
-
-.bio-container h2 {
-  margin-bottom: 20px;
 }
 
 .bio-container p {
@@ -63,7 +57,6 @@
 
 .post-card {
   border: 1px solid black;
-  padding: 10px;
   margin-bottom: 0.4rem;
 }
 
@@ -72,7 +65,6 @@
 }
 
 .post-card p {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -81,7 +73,6 @@
 }
 
 .reactions span {
-  padding: 6px;
   margin-right: 10px;
 }
 
@@ -99,9 +90,12 @@
 .comment-container {
   border: 1px solid black;
   margin: 10px 0 10px 0;
-  padding: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.comment-container span:nth-child(even) {
+  background-color: rgb(221, 219, 219);
 }
 
 .post-header {
@@ -127,10 +121,6 @@
 
 .comment-title {
   margin-bottom: 0.7rem;
-}
-
-.post-card-container {
-  margin: 2rem 0 0.5rem 0;
 }
 
 .new-post-btn {
@@ -165,7 +155,6 @@
 .new-post-container {
   width: 40%;
   border: 1px solid black;
-  padding: 20px 40px;
 }
 
 .new-post-container form {
@@ -178,6 +167,7 @@
 }
 
 .new-post-container h1 {
+  color: whitesmoke;
   margin-bottom: 1rem;
   text-align: center;
 }
