@@ -17,14 +17,16 @@
  <section class="post-section w-[70%] mx-auto my-20">
     <div class="post-container  flex justify-center flex-wrap">
         <% @user.recent_posts.each do |post|%>
-            <div class="post-card bg-gray-200 border-2 my-5  rounded-md w-[700px]  hover:bg-gray-400">
-                <h2 class=" font-semibold text-lg bg-black/80 text-white px-3 py-1"><%= post.title %></h2>
-                <p class="line-clamp-2 px-2 py-1 text-sm"><%= post.text %></p>
-                <div class="reactions p-4">
-                    <span class="font-semibold text-sm">Comments: <%== post.comment_counter%> </span>
-                    <span class="font-semibold text-sm">Likes: <%== post.like_counter%> </span>
+            <%= link_to user_post_path(user_id: post.author_id, id: post.id) do%>
+                <div class="post-card bg-gray-200 border-2 my-5  rounded-md w-[700px]  hover:bg-gray-400">
+                    <h2 class=" font-semibold text-lg bg-black/80 text-white px-3 py-1"><%= post.title %></h2>
+                    <p class="line-clamp-2 px-2 py-1 text-sm"><%= post.text %></p>
+                    <div class="reactions p-4">
+                        <span class="font-semibold text-sm">Comments: <%== post.comment_counter%> </span>
+                        <span class="font-semibold text-sm">Likes: <%== post.like_counter%> </span>
+                    </div>
                 </div>
-            </div>
+            <% end %>
         <% end%>
     </div>
     <div class="flex justify-center">
