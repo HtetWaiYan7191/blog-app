@@ -1,13 +1,14 @@
 <section class="new-post-section">
-<div class="new-post-container">
+<div class="new-post-container rounded-md border-2">
         <h1>Add a new comment</h1>
 <%= form_with model: @comment, url: user_post_comments_path do |c| %>
 <div class="text-container">
-     <%= c.label :text%>
-    <%= c.text_area :text, cols: 30, rows:1%><br>
+     <%= c.label :text, class: "font-semibold text-lg px-3 py-1"%>
+    <%= c.text_area :text, class:"font-semibold text-lg px-3 py-1 border border-2", cols: 30, rows:1%><br>
 </div>
-   
-    <%= c.submit "Submit", class:"new-post-btn submit-btn" %>
+    <div class="">
+        <%= c.submit "Submit", class:"bg-black text-white/80 hover:text-white hover:font-semibold my-5 ms-5 border-2 px-3 py-1 rounded-md" %>
+    </div>
 <% end %>
 </div>
 

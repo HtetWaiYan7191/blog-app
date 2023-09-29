@@ -1,6 +1,6 @@
 <section class="new-post-section">
-<div class="new-post-container ">
-        <h1 class="bg-black/80 px-3 py-2 text-lg text-whtie">Add a new post</h1>
+<div class="new-post-container rounded-md border-2 ">
+        <h1 class="bg-black/80 px-3 py-2 text-2xl font-semibold text-whtie">Add a new post</h1>
     <%= form_with model: @post, url: user_posts_path do |form| %>
         <%= form.label :title, class:"font-semibold text-lg px-3 py-1"%>
         <%= form.text_field :title, class: "border border-1 w-[70%]"%><br>
@@ -9,7 +9,7 @@
         <%= form.text_area :text, cols:40, row: 2, class: "border border-1 w-[70%]"%><br>
         </div>
         <div class="flex justify-center my-2">
-            <%= form.submit "Submit" , class:"bg-black text-white border-2 w-[150px]  p-1 rounded-md"%>
+            <%= form.submit "Submit" , class:"bg-black text-white/80 hover:text-white hover:font-semibold border-2 px-3  py-1 rounded-md"%>
         </div>
     <% end %>
 </div>
