@@ -1,16 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Comments', type: :request do
-  describe 'GET /new' do
+  describe 'GET /users/:user_id/posts/:post_id/comments/new' do
     it 'returns http success' do
-      get '/comments/new'
-      expect(response).to have_http_status(:success)
-    end
-  end
-
-  describe 'GET /create' do
-    it 'returns http success' do
-      get '/comments/create'
+      user_id = 1
+      post_id = 2
+      get new_user_post_comment_path(user_id:, post_id:)
       expect(response).to have_http_status(:success)
     end
   end
