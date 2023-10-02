@@ -141,6 +141,11 @@ it will run the the server on ```localhost:3000```
 - GitHub: [@HtetWaiYan7191](https://github.com/HtetWaiYan7191)
 - LinkedIn: [Htet Wai Yan](https://www.linkedin.com/in/htet-wai-yan19/)
 
+👤 **John Murianki**
+- GitHub: [@githubhandle](https://github.com/tjay1760)
+- Twitter: [@twitterhandle](https://twitter.com/TjayPod)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/john-murianki-thiongo)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
