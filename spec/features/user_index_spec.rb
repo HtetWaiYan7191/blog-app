@@ -20,8 +20,6 @@ RSpec.describe 'User index', type: :feature do
     expect(page).to have_content 'Htet'
   end
 
-
-
   it ' should return the correct css ' do
     expect(page).to have_css("img[src*='https://picsum.photos/id/23/200']")
   end
