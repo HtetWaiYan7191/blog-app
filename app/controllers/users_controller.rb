@@ -9,6 +9,6 @@ class UsersController < ApplicationController
 
   def sign_out_user
     sign_out(current_user) # This will sign out the currently authenticated user
-    redirect_to root_path, notice: 'Signed out successfully'
+    redirect_to root_path, notice: 'Log out successfully'
   end
 end
