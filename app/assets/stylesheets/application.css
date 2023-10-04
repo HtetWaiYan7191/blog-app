@@ -94,7 +94,7 @@
   flex-direction: column;
 }
 
-.comment-container span:nth-child(even) {
+.comment-container .comment-card:nth-child(even) {
   background-color: rgb(221, 219, 219);
 }
 
