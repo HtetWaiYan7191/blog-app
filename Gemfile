@@ -50,6 +50,9 @@ gem 'bootsnap', require: false
 # Install cancancan
 gem 'cancancan'
 
+# Install rswag for api documentation
+gem 'rswag'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
