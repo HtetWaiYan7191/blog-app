@@ -4,5 +4,4 @@ class Api::V1::PostsController < ApplicationController
     @posts = Post.all.order('created_at')
     render json: { success: true, data: { posts: @posts } }, status: :ok
   end
- 
 end
