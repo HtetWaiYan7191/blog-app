@@ -8,6 +8,10 @@
             <%= form.label :text , class:"font-semibold text-lg px-3 py-1"%>
         <%= form.text_area :text, cols:40, row: 2, class: "border border-1 w-[70%]"%><br>
         </div>
+        <div class="field">
+            <%= form.label :description%>
+            <%= form.rich_text_area :description%>
+        </div>
         <div class="flex justify-center my-2">
             <%= form.submit "Submit" , class:"bg-black text-white/80 hover:text-white hover:font-semibold border-2 px-3  py-1 rounded-md"%>
         </div>
