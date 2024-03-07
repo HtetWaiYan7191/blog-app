@@ -11,6 +11,10 @@ class PostsController < ApplicationController
   end
 
   def new
+    @user = User.find(params[:user_id])
+    if @user != current_user 
+      redirect_to user_posts_path(id: @user.id), notice: 'You cannot create post for other people'
+    end
     @post = Post.new
   end
 
